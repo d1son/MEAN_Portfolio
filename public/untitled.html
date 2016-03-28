@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="Profile">
+<head>
+  <meta charset="utf-8">
+  <title>Jimmy Mona</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
+  <link rel="stylesheet" href="/css/home/home.css">
+  <base href="/" />
+</head>
+<body>
+  <div class="nav" ng-controller="navController">
+    <div class="container">
+      <ul class = "pull-left">
+        <li><a ng-show="home" href="#home">Home</a></li>
+        <li><a ng-hide="home" href="/">Back Home</a></li>
+        <li><a ng-show="home" href="#aboutMe">About Me</a></li>
+        <li><a ng-show="home" href="#projects">Projects</a></li>
+        <li><a ng-show="home" href="#skills">Skills</a></li>
+        <li><a href="mailto:jmona789@gmail.com">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <ui-view></ui-view>
+  <!--jQuery -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <!--Custom js -->
+  <script type="text/javascript" src="/js/home/commit.js"></script>
+  <script type="text/javascript" src="/js/home/repos.js"></script>
+  <!--Angular-->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.2/angular.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
+  <!--Custom Angular -->
+  <script type="text/javascript" src="js/angular/app.js"></script>
+  </body>
+  </html>

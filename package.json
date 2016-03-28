@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/d1son/MEAN_Portfolio/issues"
   },
-  "homepage": "https://github.com/d1son/MEAN_Portfolio#readme"
+  "homepage": "https://github.com/d1son/MEAN_Portfolio#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
 }
